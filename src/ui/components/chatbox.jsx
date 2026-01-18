@@ -23,9 +23,9 @@ export default function ChatBox() {
           <div className="flex items-center gap-3">
             {/* Window Controls */}
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-              <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-              <div className="w-3 h-3 rounded-full bg-[#28c840]" />
+              <div className="w-3 h-3 rounded-full bg-neutral-800" />
+              <div className="w-3 h-3 rounded-full bg-neutral-800" />
+              <div className="w-3 h-3 rounded-full bg-neutral-800" />
             </div>
 
             {/* Title */}
