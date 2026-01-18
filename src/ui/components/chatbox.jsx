@@ -15,11 +15,11 @@ export default function ChatBox() {
   }
 
   return (
-    <div className="w-full max-w-3xl">
+    <div className="w-full max-w-2xl">
       {/* Terminal Window */}
-      <div className="bg-[#000000] rounded-2xl overflow-hidden border border-[#1a1a2e]">
+      <div className="relative bg-neutral-950 rounded-lg border border-neutral-800 overflow-hidden shadow-2xl ">
         {/* Title Bar */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-[#1a1a2e] bg-[#0d0d18]">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-900 bg-[#0d0d18] max-h-[43px]">
           <div className="flex items-center gap-3">
             {/* Window Controls */}
             <div className="flex items-center gap-2">
@@ -54,7 +54,7 @@ export default function ChatBox() {
 
         {/* Input Area */}
         <div
-          className="p-6 bg-[#000000] min-h-[160px] cursor-text"
+          className="p-6 bg-[#000000] max-h-[112px] cursor-text"
           onClick={handleContainerClick}
         >
           <div className="flex items-start gap-2">
@@ -69,14 +69,14 @@ export default function ChatBox() {
               }
               placeholder="create a counter contract..."
               maxLength={200}
-              className="flex-1 bg-transparent text-gray-300 placeholder-gray-600 font-mono text-lg outline-none resize-none min-h-[120px] caret-gray-300"
+              className="flex-1 bg-transparent text-gray-300 placeholder-gray-600 font-mono text-lg outline-none resize-none max-h-[72px] caret-gray-300"
               rows={4}
             />
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex items-center justify-between px-4 py-3 border-t border-[#1a1a2e] bg-[#0d0d18]">
+        <div className="flex items-center justify-between px-4 py-3 border-t border-neutral-900 bg-[#0d0d18] max-h-[57px]">
           <div className="flex items-center gap-3">
             {/* Infinity Button */}
             <button className="flex items-center justify-center gap-1 px-3 py-1.5 rounded-full bg-[#4c1d95] hover:bg-[#5b21b6] transition-colors">
@@ -106,7 +106,7 @@ export default function ChatBox() {
 
               {/* Templates Dropdown */}
               {showTemplates && (
-                <div className="absolute bottom-full left-0 mb-2 w-48 bg-[#0d0d18] border border-[#1a1a2e] rounded-lg shadow-xl overflow-hidden">
+                <div className="absolute bottom-full left-0 mb-2 w-48 bg-[#0d0d18] border border-[#E5E5E5] rounded-lg shadow-xl overflow-hidden">
                   <div className="p-3 text-center text-gray-600 text-sm">
                     No templates yet
                   </div>
@@ -130,13 +130,13 @@ export default function ChatBox() {
 
       {/* Action Boxes */}
       <div className="flex items-center justify-center gap-4 mt-8">
-        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#1a1a2e] rounded-lg">
+        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#E5E5E5] rounded-lg">
           <span className="text-[#a78bfa] font-mono text-sm">{">_"}</span>
           <span className="text-gray-300 text-sm">Generate</span>
           <ArrowRight className="w-4 h-4 text-gray-500 ml-1" />
         </div>
 
-        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#1a1a2e] rounded-lg">
+        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#E5E5E5] rounded-lg">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-400">
             <path d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
@@ -144,7 +144,7 @@ export default function ChatBox() {
           <ArrowRight className="w-4 h-4 text-gray-500 ml-1" />
         </div>
 
-        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#1a1a2e] rounded-lg">
+        <div className="flex items-center gap-2 px-4 py-2 bg-[#0d0d18]/80 border border-[#E5E5E5] rounded-lg">
           <svg
             viewBox="0 0 24 24"
             fill="none"
